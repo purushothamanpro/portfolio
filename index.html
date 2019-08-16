@@ -20,19 +20,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.banner {
-    /*height: : 50%;*/
-    /*height: 100%;*/
-    /*min-width: 100%;*/
-     background: url(images/landing.jpg);
-     
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hover{
+  display: none;
+  background-color: pink;
+  color: white;
+}
+.mycard:hover .hover{
+  display: block;
 }
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -48,7 +42,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p style="text-align: center;color: white"> <b> Web Designer</b></p>
   </div>
   <div class="w3-bar-block" style="background-color:;height:">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding active"><i class="fa fa-th-large fa-fw w3-margin-right"></i>MY PROJECTS</a> 
+    <a href="#project" onclick="w3_close()" class="w3-bar-item w3-button w3-padding active"><i class="fa fa-th-large fa-fw w3-margin-right"></i>MY PROJECTS</a> 
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT ME</a>
   <div class="w3-panel w3-large">
@@ -68,15 +62,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
-  <div class="banner">
+<!--   <div class="banner">
     <div>
     <h1>Portfolio</h1>  
     </div>
-  </div>
+  </div> -->
 
 
   <!-- Header -->
-  <header id="portfolio">
+  <header id="projects">
     <a href="#"><img src="images/avatar.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
@@ -87,8 +81,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-row" >
-    <div class="w3-col s12 m12 l12 w3-container" style="margin-bottom: 5%">
+    <div class="w3-col s12 m12 l12 w3-container mycard" style="margin-bottom: 5%">
       <img src="images/projectthree.png" alt="Thuvakkam" style="width:100%" class="w3-hover-opacity">
+      <div class="hover">
+        <h2><a href="">Visit Page</a></h2>
+      </div>
       <div class="w3-container w3-white">
         <h3 class="captalize"><b>Thuvakkam</b></h3>
         <p><b>Exceeding limits</b></p>
@@ -137,22 +134,30 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
 <!--     <div class="w3-col m6">
       <img src="images/pic2.jpeg" alt="Purushothaman" style="width:100%">
-    </div -->>
+    </div> -->
   </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of web  designing ..! Web designing is not only my profession but also my passion. </p>
     <hr>
     
     <h4>Technical Skills</h4>
     <!-- Progress bars / Skills -->
     
-    <p>Web Design</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    <p>HTML</p>
+    <div class="" style="background-color: #ebb5cd">
+      <div class="w3-container  w3-padding w3-center" style="width:85%;background-color: #ff0073;color: white">85%</div>
     </div>
-    
+    <p>CSS</p>
+    <div class="" style="background-color: #d0cdfa">
+      <div class="w3-container  w3-padding w3-center" style="width:75%;background-color: #8b78eb;color: white">75%</div>
+    </div>
+    <p>Bootstrap</p>
+    <div class="" style="background-color: #f7c6ed">
+      <div class="w3-container  w3-padding w3-center" style="width:80%;background-color: #ff00c8;color: white">80%</div>
+    </div>
+
     
     <hr>
     
